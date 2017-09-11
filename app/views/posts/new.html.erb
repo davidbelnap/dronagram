@@ -1,0 +1,25 @@
+<nav class="teal lighten-2" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Dronagram</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+              <%= link_to 'Home', static_pages_home2_path %>
+        </li>
+        <li>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        </li>
+      </ul>
+</nav>
+<div class="container">
+
+  <h1>Create Post!</h1>
+
+  <%= simple_form_for [@user, @post] do |f| %>
+  <%= f.input :image, class: 'btn-primary center' %>
+  <%= f.input :caption %>
+  <%= f.button :submit, class: 'btn-primary' %>
+  <% end %>
+
+
+
+</div>

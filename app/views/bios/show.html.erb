@@ -1,0 +1,56 @@
+<nav class="teal lighten-2" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Dronagram</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+              <%= link_to 'Home', static_pages_home2_path %>
+        </li>
+        <li>
+        <%= link_to 'Create Post', new_user_post_path(@user) %>
+  </li>
+        <li>
+              <%= link_to 'Edit Bio', edit_user_bio_path(@user, @bio) %>
+        </li>
+        <li>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        </li>
+      </ul>
+  </nav>
+<div class="container">
+  <div class="row">
+    <div class="col s6 m3">
+      <h4><%= @user.first_name %>
+      <%= @user.last_name %></h4>
+      <br>
+      <img src="/assets/profile.jpg" alt="">
+      <br>
+      <h4><%= @user.user_name %></h4>
+      <br>
+      <h6><%= current_user.bio.description %></h6>
+    </div>
+    <div class="col s6 m9">
+
+    <% @user.posts.each do |post| %>
+      <div class="row">
+         <div class="col s12 m7">
+           <div class="card">
+             <div class="card-image">
+             <%= image_tag post.image.url(:medium) %>
+               <span class="card-title"></span>
+             </div>
+             <div class="card-content">
+               <%= post.caption %>
+             </div>
+             <div class="card-action">
+
+             </div>
+           </div>
+         </div>
+       </div>
+  <% end %>
+
+
+    </div>
+  </div>
+
+</div>

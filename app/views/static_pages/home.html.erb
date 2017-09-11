@@ -1,0 +1,112 @@
+<nav class="teal lighten-2" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Dronagram</a>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to "Login", new_user_session_path %></li>
+    </ul>
+  </div>
+</nav>
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">DRONAGRAM</h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">Join a community of drone photographers from around the world.</h5>
+      </div>
+      <div class="row center">
+        <%= link_to 'Join the Community', new_user_registration_path, class: 'btn btn-primary' %>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><%= image_tag("golden_gate_fog.jpg") %></div>
+</div>
+<div class="container">
+  <div class="section">
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center grey-text"><i class="material-icons medium">camera</i></h2>
+          <h4 class="center">Shoot</h4>
+          <p class="light">Get out and see the world. Take the drone photos that you love while you're out there.</p>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center grey-text"><i class="material-icons medium">chat</i></h2>
+          <h4 class="center">Post</h4>
+          <p class="light">With the simplicity of Dronagram, we make it easy for you to upload photos to your profile for our global community of drone photographers to see.</p>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center grey-text"><i class="material-icons medium">group</i></h2>
+          <h4 class="center">Connect</h4>
+          <p class="light">Find other drone photographers just like you and get inspired by their work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallax-container valign-wrapper flex-center">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light white-text">Dronagram brings together a community of drone photographers,</h5>
+        <h5 class="header col s12 light white-text">whether new to the community or experienced</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><%= image_tag("residential.jpg") %></div>
+</div>
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send grey-text"></i></h3>
+        <h4>drone pho·tog·ra·phy</h4>
+        <h5>drōn fəˈtäɡrəfē</h5>
+        <h6>noun</h6>
+        <p class="left-align light">Drone photography is the capture of still images and video by a remotely-operated or autonomous unmanned aerial vehicle (UAV), also known as an unmanned aircraft system (UAS) or, more commonly, as a drone.</p>
+        <p class="left-align light">-TechTarget</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallax-container valign-wrapper flex-center">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light white-text center">Join our</h5>
+        <h5 class="header col s12 light white-text center">community for free</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><%= image_tag("coast1.jpg") %></div>
+</div>
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">About Us</h5>
+        <p class="grey-text text-lighten-4">We are a team of students at DevPoint Labs. We are learning both front-end and back-end web-development in an eleven week course. We come from different backgrounds with different levels of experience, but we're all working toward the same goal of learning web-development.</p>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Find us on</h5>
+        <h5 class="logo"><%= image_tag("GitHub_Logo_White.png") %></h5>
+        <ul>
+          <li><a class="white-text" href="https://github.com/Ad00M87">Adam Kimball at Ad00M87</a></li>
+          <li><a class="white-text" href="https://github.com/Patticus3rd">Patrick Seiuli at Patticus3rd</a></li>
+          <li><a class="white-text" href="https://github.com/davidbelnap">David Belnap at davidbelnap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    Made with <a class="grey-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    </div>
+  </div>
+</footer>

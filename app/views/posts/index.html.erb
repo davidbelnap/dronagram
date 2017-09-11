@@ -1,0 +1,19 @@
+
+ <% @posts.each do |post| %>
+        <div class="row">
+           <div class="col s12 m7">
+             <div class="card">
+               <div class="card-image">
+               <%= image_tag post.image.url(:medium) %>
+                 <span class="card-title">Card Title</span>
+               </div>
+               <div class="card-content">
+                 <% post.caption %>
+               </div>
+               <div class="card-action">
+                 <a href="#">This is a link</a>
+               </div>
+             </div>
+           </div>
+         </div>
+    <% end %>

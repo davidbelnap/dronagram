@@ -1,0 +1,77 @@
+<nav class="teal lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Dronagram</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+            <% if @user.bio.present? %>
+              <%= link_to "Bio", user_bio_path(@user, @bio) %>
+            <% else %>
+              <%= link_to "Create Bio", new_user_bio_path(@user) %>
+            <% end %>
+        </li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "View Posts", user_posts_path(@user) %></li>
+
+      </ul>
+  </nav>
+  <br><br>
+<div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/trends.jpg">
+              <span class="card-title">Drone Trends of 2017</span>
+            </div>
+            <div class="card-content">
+              <p>Drone technology is mainstream. The hardware secrets are out and the price of a quadcopter with a 1080p camera is down to a hundred dollars. The commercial applications of drones are just starting to unfold. There are queues of companies waiting to capitalize on these flying automatons. These are the drone trends of 2017.</p>
+            </div>
+            <div class="card-action">
+              <a href="http://www.futureofeverything.io/2017/01/24/drone-trends-watch-2017/">Read the Story</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/future.jpg">
+              <span class="card-title">The future of Drones</span>
+            </div>
+            <div class="card-content">
+              <p>Have you ever wondered about drone trends and where they are headed? Drones, or at least consumer drones, started out initially as a hobby for a very small gathering of enthusiasts...</p>
+            </div>
+            <div class="card-action">
+              <a href="http://mydronelab.com/blog/drone-trends.html">Read the Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/inaction.jpg">
+              <span class="card-title">New to Drones?</span>
+            </div>
+            <div class="card-content">
+              <p>Few emerging technologies have risen as quickly as unmanned aerial systems — that’s drones and quadcopters, of course. Because of this, more people today own one of these RC vehicles than ever before. Beyond a drone’s simple ability to act like a remote-controlled toy for adults, its budding worth lies with its potential to capture stunning photos and video. Many consumers have purchased models outfitted with on-board cameras or camera (or GoPro) mounts.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.digitaltrends.com/photography/guide-to-aerial-drone-photography/">Read the Story</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/above.jpg">
+              <span class="card-title">February Visual Trend: View From Above</span>
+            </div>
+            <div class="card-content">
+              <p>Two sports teams played in the Super Bowl this year (we’ve been told), but our eyes were on the drones. Hundreds of them lit up the sky during Lady Gaga’s halftime show. These days, drones can bring sparkle to America’s sports events and capture new views of the action, as they did for the the most recent U.S. Open. It’s all part of a larger trend: as drones become more ubiquitous, people are experimenting with their capabilities. For us, the most exciting part of the trend is a huge burst of creativity in aerial photography.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://blogs.adobe.com/creativecloud/february-visual-trend-view-from-above/">Read the Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
