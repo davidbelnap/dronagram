@@ -3,15 +3,18 @@
       <a id="logo-container" href="#" class="brand-logo">Dronagram</a>
       <ul class="right hide-on-med-and-down">
         <li>
-            <% if @user.bio.present? %>
-              <%= link_to "Bio", user_bio_path(@user, @bio) %>
-            <% else %>
-              <%= link_to "Create Bio", new_user_bio_path(@user) %>
-            <% end %>
+          <%= link_to "View Posts", user_posts_path(@user) %>
         </li>
-        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-        <li><%= link_to "View Posts", user_posts_path(@user) %></li>
-
+        <li>
+          <% if @user.bio.present? %>
+            <%= link_to "Profile", user_bio_path(@user, @bio) %>
+          <% else %>
+            <%= link_to "Edit Profile", new_user_bio_path(@user) %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        </li>
       </ul>
   </nav>
   <br><br>
